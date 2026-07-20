@@ -1,0 +1,22 @@
+web link: http://127.0.0.1:3000/jsDOM4.html?vscode-livepreview=true
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="msg">Hello Tango!</h1>
+    <button onclick="addNumbers()">Add Numbers</button>
+    <script>
+        function addNumbers()
+        {
+            let num1 = Number(prompt("Enter the first number: "))
+            let num2 = Number(prompt("Enter the second number: "))
+            let result = num1 + num2
+            document.getElementById("msg").innerHTML="Addition of two Numbers is: " + result;
+        }
+    </script>
+</body>
+</html>>
