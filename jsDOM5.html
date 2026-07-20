@@ -1,0 +1,28 @@
+web link: http://127.0.0.1:3000/jsDOM5.html?vscode-livepreview=true
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="check">Check Voting Eligibility</h2>
+    <button onclick="check()">Check</button>
+
+    <script>
+        function check() {
+            let age = Number(prompt("Enter your age: "))
+            if (age >= 18) {
+                document.getElementById("check").innerHTML = "You are eligible to vote!";
+            }
+            else {
+                document.getElementById("check").innerHTML = "You are not eligible to vote!";
+            }
+        }
+    </script>
+</body>
+
+</html> 
