@@ -1,28 +1,25 @@
-web link : http://127.0.0.1:3000/jsDOM5.html?vscode-livepreview=true
+web link: http://127.0.0.1:3000/jsDOM6.html?vscode-livepreview=true
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <h2 id="check">Check Voting Eligibility</h2>
+    <h2 id="check">Weather Checker</h2>
     <button onclick="check()">Check</button>
 
     <script>
         function check() {
-            let age = Number(prompt("Enter your age: "))
-            if (age >= 18) {
-                document.getElementById("check").innerHTML = "You are eligible to vote!";
+            let temp = parsefloat(prompt("Enter todays temperature: "))
+            if (temp >= 30) {
+                document.getElementById("check").innerHTML = "Hot Day!";
             }
             else {
-                document.getElementById("check").innerHTML = "You are not eligible to vote!";
+                document.getElementById("check").innerHTML = "Plaesent Weather!";
             }
         }
     </script>
 </body>
-
 </html>
